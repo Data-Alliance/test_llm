@@ -3,7 +3,8 @@ from pydantic import BaseModel
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-model_name = "tiiuae/falcon-rw-1b"
+# model_name = "tiiuae/falcon-rw-1b"
+model_name = "tiiuae/falcon-7b"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(
